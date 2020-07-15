@@ -5,8 +5,7 @@
 
 #include <algorithm>
 #include <stdio.h>
-// std::clamp 
-#include <bits/stdc++.h> 
+
 using namespace linmath;
 
 #ifndef M_PI

@@ -1,16 +1,5 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License.
-#[[
-if (MSVC_VERSION GREATER_EQUAL "1900")
-    include(CheckCXXCompilerFlag)
-    CHECK_CXX_COMPILER_FLAG("/std:c++latest" _cpp_latest_flag_supported)
-    if (_cpp_latest_flag_supported)
-        add_compile_options("/std:c++latest")
-    endif()
-endif()
-]]
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_C_STANDARD 99)
 
 add_library(window_controller_3d STATIC
             CoordinateAxes.cpp
